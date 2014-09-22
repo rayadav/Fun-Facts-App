@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF1F967119D01B16004AE78C /* FactBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1F967019D01B16004AE78C /* FactBook.swift */; };
 		FF69D9B819CE34E30056AC2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69D9B719CE34E30056AC2A /* AppDelegate.swift */; };
 		FF69D9BA19CE34E30056AC2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69D9B919CE34E30056AC2A /* ViewController.swift */; };
 		FF69D9BD19CE34E30056AC2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF69D9BB19CE34E30056AC2A /* Main.storyboard */; };
 		FF69D9BF19CE34E30056AC2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF69D9BE19CE34E30056AC2A /* Images.xcassets */; };
 		FF69D9C219CE34E30056AC2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF69D9C019CE34E30056AC2A /* LaunchScreen.xib */; };
 		FF69D9CE19CE34E30056AC2A /* Fun_FactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69D9CD19CE34E30056AC2A /* Fun_FactsTests.swift */; };
+		FF8D04E219D0843500C8B1B2 /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8D04E119D0843500C8B1B2 /* ColorWheel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF1F967019D01B16004AE78C /* FactBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactBook.swift; sourceTree = "<group>"; };
 		FF69D9B219CE34E30056AC2A /* Fun Facts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fun Facts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF69D9B619CE34E30056AC2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF69D9B719CE34E30056AC2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,8 @@
 		FF69D9C719CE34E30056AC2A /* Fun FactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fun FactsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF69D9CC19CE34E30056AC2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF69D9CD19CE34E30056AC2A /* Fun_FactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fun_FactsTests.swift; sourceTree = "<group>"; };
+		FF69D9D719CE37130056AC2A /* Scratchpad.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Scratchpad.playground; sourceTree = "<group>"; };
+		FF8D04E119D0843500C8B1B2 /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +64,7 @@
 		FF69D9A919CE34E30056AC2A = {
 			isa = PBXGroup;
 			children = (
+				FF69D9D819CE371F0056AC2A /* Playgrounds */,
 				FF69D9B419CE34E30056AC2A /* Fun Facts */,
 				FF69D9CA19CE34E30056AC2A /* Fun FactsTests */,
 				FF69D9B319CE34E30056AC2A /* Products */,
@@ -77,6 +83,7 @@
 		FF69D9B419CE34E30056AC2A /* Fun Facts */ = {
 			isa = PBXGroup;
 			children = (
+				FF1F967019D01B16004AE78C /* FactBook.swift */,
 				FF69D9B719CE34E30056AC2A /* AppDelegate.swift */,
 				FF69D9B919CE34E30056AC2A /* ViewController.swift */,
 				FF69D9BB19CE34E30056AC2A /* Main.storyboard */,
@@ -90,6 +97,7 @@
 		FF69D9B519CE34E30056AC2A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FF8D04E119D0843500C8B1B2 /* ColorWheel.swift */,
 				FF69D9B619CE34E30056AC2A /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +118,14 @@
 				FF69D9CC19CE34E30056AC2A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF69D9D819CE371F0056AC2A /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				FF69D9D719CE37130056AC2A /* Scratchpad.playground */,
+			);
+			name = Playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1F967119D01B16004AE78C /* FactBook.swift in Sources */,
 				FF69D9BA19CE34E30056AC2A /* ViewController.swift in Sources */,
 				FF69D9B819CE34E30056AC2A /* AppDelegate.swift in Sources */,
+				FF8D04E219D0843500C8B1B2 /* ColorWheel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +423,7 @@
 				FF69D9D319CE34E30056AC2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF69D9D419CE34E30056AC2A /* Build configuration list for PBXNativeTarget "Fun FactsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +432,7 @@
 				FF69D9D619CE34E30056AC2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
