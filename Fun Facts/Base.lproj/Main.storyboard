@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6246" systemVersion="14A361p" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6246" systemVersion="14A388b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6239"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -36,20 +36,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUd-74-wml">
-                                <rect key="frame" x="50" y="452" width="216" height="61"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="216" id="2hv-V6-viG"/>
-                                    <constraint firstAttribute="height" constant="61" id="GWf-Ob-59q"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                <color key="tintColor" red="0.29803921568627451" green="0.68627450980392157" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Show Another Fun Fact">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDj-cr-lYk">
+                                <rect key="frame" x="84" y="443" width="152" height="30"/>
+                                <state key="normal" title="Get Another Fun Fact!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="showFunFact" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lmA-n7-35e"/>
+                                    <action selector="showFunFact" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0BH-5V-L0j"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -57,15 +62,13 @@
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="kf2-My-Jdl" secondAttribute="trailing" constant="124" id="5Ug-Vh-flJ"/>
                             <constraint firstItem="xJ5-x2-aaC" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="180" id="8ey-Cy-4md"/>
-                            <constraint firstItem="OUd-74-wml" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="34" id="V6K-Ro-N1O"/>
                             <constraint firstItem="kf2-My-Jdl" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="dgp-fZ-Nx7"/>
                             <constraint firstItem="xJ5-x2-aaC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="34" id="dvR-TR-G7o"/>
                             <constraint firstItem="kf2-My-Jdl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="36" id="dwg-xM-mmR"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="OUd-74-wml" secondAttribute="bottom" constant="55" id="hla-J2-GM9"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="funFactButton" destination="OUd-74-wml" id="byE-Gi-Suk"/>
+                        <outlet property="funFactButton" destination="fDj-cr-lYk" id="9Tv-Ih-KoQ"/>
                         <outlet property="funFactLabel" destination="xJ5-x2-aaC" id="XxW-zT-9Wi"/>
                     </connections>
                 </viewController>

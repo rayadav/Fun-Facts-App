@@ -12,7 +12,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var funFactLabel: UILabel!
     
+   
     @IBOutlet weak var funFactButton: UIButton!
+    
     
     let factBook = FactBook()
     let colorWheel = ColorWheel()
@@ -32,8 +34,8 @@ class ViewController: UIViewController {
         
         var randomColor = colorWheel.randomColor()
         view.backgroundColor = randomColor
-        funFactButton.tintColor = randomColor
         funFactLabel.text = factBook.randomFact()
     }
 
+    
 }
